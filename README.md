@@ -24,7 +24,7 @@ RoomControl is an iOS utility application that helps the user control IoT device
 * User can set limit on room occupancy
 * Alert the user when the room is over occupied 
 
-#Implemented 
+#Implementation
 ##Model
 * Swift file that defines class variables
 * Swift file that handles app interaction with the IoT device
