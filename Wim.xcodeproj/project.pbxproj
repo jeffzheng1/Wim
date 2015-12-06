@@ -23,6 +23,8 @@
 		EF6776DA1C13EC720061D566 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6776D81C13EC720061D566 /* Bolts.framework */; };
 		EF6776DB1C13EC720061D566 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6776D91C13EC720061D566 /* Parse.framework */; };
 		EF6776DD1C13F2DD0061D566 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6776DC1C13F2DD0061D566 /* SystemConfiguration.framework */; };
+		EF6776DF1C13F8930061D566 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6776DE1C13F8930061D566 /* RegistrationViewController.swift */; };
+		EF6776E11C14023C0061D566 /* DetailRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6776E01C14023C0061D566 /* DetailRegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		EF6776D81C13EC720061D566 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		EF6776D91C13EC720061D566 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		EF6776DC1C13F2DD0061D566 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EF6776DE1C13F8930061D566 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		EF6776E01C14023C0061D566 /* DetailRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 			children = (
 				EF6776B41C13E2E20061D566 /* AppDelegate.swift */,
 				EF6776B61C13E2E20061D566 /* ViewController.swift */,
+				EF6776E01C14023C0061D566 /* DetailRegistrationViewController.swift */,
+				EF6776DE1C13F8930061D566 /* RegistrationViewController.swift */,
 				EF6776B81C13E2E20061D566 /* Main.storyboard */,
 				EF6776BB1C13E2E20061D566 /* Assets.xcassets */,
 				EF6776BD1C13E2E20061D566 /* LaunchScreen.storyboard */,
@@ -180,7 +186,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF6776DF1C13F8930061D566 /* RegistrationViewController.swift in Sources */,
 				EF6776B71C13E2E20061D566 /* ViewController.swift in Sources */,
+				EF6776E11C14023C0061D566 /* DetailRegistrationViewController.swift in Sources */,
 				EF6776B51C13E2E20061D566 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

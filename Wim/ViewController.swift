@@ -10,14 +10,23 @@ import UIKit
 import Parse
 
 class ViewController: UIViewController {
-
+    
+    var registrationObjects: AnyObject!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let testObject = PFObject(className: "TestObject")
-        testObject["foo"] = "bar"
-        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            print("Object has been saved.")
+        let query = PFQuery(className: "UserHack")
+        query.fromLocalDatastore()
+        query.whereKey("local", equalTo: "thisUser")
+        query.findObjectsInBackground().continueWithBlock {
+            (task: BFTask!) -> AnyObject in
+            if let error = task.error {
+                print("Error: \(error)")
+                return task
+            }
+            self.registrationObjects = task.result
+            return task
         }
     }
 
@@ -25,7 +34,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
 
 }
 
