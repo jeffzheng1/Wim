@@ -11,7 +11,6 @@ import Parse
 
 class DetailRegistrationViewController: UIViewController {
     
-    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var typeTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
@@ -26,5 +25,19 @@ class DetailRegistrationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func saveRegistration() {
+        let device = PFObject(className:"Devices")
+        device["type"] = typeTextField.text
+        device["locationString"] = locationTextField.text
+        device["description"] = descriptionTextField.text
+        device.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                print("Success")
+            } else {
+                print("Failure")
+            }
+        }
+    }
     
 }

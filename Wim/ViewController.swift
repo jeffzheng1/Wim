@@ -11,7 +11,8 @@ import Parse
 
 class ViewController: UIViewController {
     
-    var registrationObjects: AnyObject!
+    var registrationDevices: AnyObject!
+    var deviceIDList : [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +26,13 @@ class ViewController: UIViewController {
                 print("Error: \(error)")
                 return task
             }
-            self.registrationObjects = task.result
+            self.registrationDevices = task.result
+            for (var i = 0; i < self.registrationDevices.count; i++) {
+                if let id : String = self.registrationDevices[i]["registrationCode"] as? String {
+                    self.deviceIDList.append(id)
+                }
+            }
+            self.tableViewCallback()
             return task
         }
     }
@@ -35,7 +42,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-
+    func tableViewCallback(){
+        for deviceID in self.deviceIDList {
+            let query = PFQuery(className:"Devices")
+            query.getObjectInBackgroundWithId(deviceID) {
+                (device: PFObject?, error: NSError?) -> Void in
+                if error == nil && device != nil {
+                    let type : String = device!["type"] as! String
+                    let status : String = device!["status"] as! String
+                    let location : String = device!["locationString"] as! String
+                } else {
+                    print(error)
+                }
+            }
+        }
+    }
 }
 
