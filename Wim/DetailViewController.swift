@@ -59,6 +59,7 @@ class DetailViewController: UIViewController {
                     self.statusButton.setTitle("Turn On", forState: .Normal)
                     self.statusLabel.text = "Off"
                 }
+                device.saveInBackground()
             }
         }
     }
