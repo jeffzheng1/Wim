@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EF6776B51C13E2E20061D566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6776B41C13E2E20061D566 /* AppDelegate.swift */; };
-		EF6776B71C13E2E20061D566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6776B61C13E2E20061D566 /* ViewController.swift */; };
 		EF6776BA1C13E2E20061D566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6776B81C13E2E20061D566 /* Main.storyboard */; };
 		EF6776BC1C13E2E20061D566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6776BB1C13E2E20061D566 /* Assets.xcassets */; };
 		EF6776BF1C13E2E20061D566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6776BD1C13E2E20061D566 /* LaunchScreen.storyboard */; };
@@ -25,12 +24,14 @@
 		EF6776DD1C13F2DD0061D566 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6776DC1C13F2DD0061D566 /* SystemConfiguration.framework */; };
 		EF6776DF1C13F8930061D566 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6776DE1C13F8930061D566 /* RegistrationViewController.swift */; };
 		EF6776E11C14023C0061D566 /* DetailRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6776E01C14023C0061D566 /* DetailRegistrationViewController.swift */; };
+		EFFDC4EE1C1665BD00837AD0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDC4ED1C1665BD00837AD0 /* TableViewController.swift */; };
+		EFFDC4F01C166E5100837AD0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDC4EF1C166E5100837AD0 /* TableViewCell.swift */; };
+		EFFDC4F21C168B6400837AD0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDC4F11C168B6400837AD0 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF6776B11C13E2E20061D566 /* Wim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6776B41C13E2E20061D566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF6776B61C13E2E20061D566 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF6776B91C13E2E20061D566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF6776BB1C13E2E20061D566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF6776BE1C13E2E20061D566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +49,9 @@
 		EF6776DC1C13F2DD0061D566 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EF6776DE1C13F8930061D566 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		EF6776E01C14023C0061D566 /* DetailRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRegistrationViewController.swift; sourceTree = "<group>"; };
+		EFFDC4ED1C1665BD00837AD0 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		EFFDC4EF1C166E5100837AD0 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = ../TableViewCell.swift; sourceTree = "<group>"; };
+		EFFDC4F11C168B6400837AD0 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +107,15 @@
 			isa = PBXGroup;
 			children = (
 				EF6776B41C13E2E20061D566 /* AppDelegate.swift */,
-				EF6776B61C13E2E20061D566 /* ViewController.swift */,
 				EF6776E01C14023C0061D566 /* DetailRegistrationViewController.swift */,
 				EF6776DE1C13F8930061D566 /* RegistrationViewController.swift */,
+				EFFDC4EF1C166E5100837AD0 /* TableViewCell.swift */,
 				EF6776B81C13E2E20061D566 /* Main.storyboard */,
+				EFFDC4ED1C1665BD00837AD0 /* TableViewController.swift */,
 				EF6776BB1C13E2E20061D566 /* Assets.xcassets */,
 				EF6776BD1C13E2E20061D566 /* LaunchScreen.storyboard */,
 				EF6776C01C13E2E20061D566 /* Info.plist */,
+				EFFDC4F11C168B6400837AD0 /* DetailViewController.swift */,
 			);
 			path = Wim;
 			sourceTree = "<group>";
@@ -187,8 +193,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF6776DF1C13F8930061D566 /* RegistrationViewController.swift in Sources */,
-				EF6776B71C13E2E20061D566 /* ViewController.swift in Sources */,
 				EF6776E11C14023C0061D566 /* DetailRegistrationViewController.swift in Sources */,
+				EFFDC4F01C166E5100837AD0 /* TableViewCell.swift in Sources */,
+				EFFDC4F21C168B6400837AD0 /* DetailViewController.swift in Sources */,
+				EFFDC4EE1C1665BD00837AD0 /* TableViewController.swift in Sources */,
 				EF6776B51C13E2E20061D566 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +355,7 @@
 				EF6776C51C13E2E20061D566 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

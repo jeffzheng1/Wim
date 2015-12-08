@@ -14,7 +14,7 @@ class DetailRegistrationViewController: UIViewController {
     @IBOutlet weak var typeTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,6 +30,7 @@ class DetailRegistrationViewController: UIViewController {
         device["type"] = typeTextField.text
         device["locationString"] = locationTextField.text
         device["description"] = descriptionTextField.text
+        device["status"] = "Off"
         device.saveInBackgroundWithBlock {
             (success: Bool, error: NSError?) -> Void in
             if (success) {
