@@ -94,7 +94,7 @@ void httpPutRequest(int stat){
   if (client.connect(server, 443)) {
     Serial.println("connected");
     // Make a HTTP PUT request:
-    client.println("PUT //1/classes/GameScore/Ed1nuqPvcm HTTP/1.1");
+    client.println("PUT //1/classes/Devices/Ed1nuqPvcm HTTP/1.1");
     client.println("Host: api.parse.com");
     client.println("X-Parse-Application-Id: SxjfKcwYdNLljnzzqyaj8e8dkOXDPgeXujU9GqNw");
     client.println("X-Parse-REST-API-Key: JYQahDTyvOhwdzc84t7iVu7W2hqsxA0I9WHbshVM");
@@ -147,7 +147,7 @@ void httpGetRequest(){
   if (client.connect(server, 443)) {
     Serial.println("connected for GET Request");
     // Make a HTTP PUT request:
-    client.println("GET //1/classes/GameScore/Ed1nuqPvcm HTTP/1.1");
+    client.println("GET //1/classes/Devices/Ed1nuqPvcm HTTP/1.1");
     client.println("Host: api.parse.com");
     client.println("X-Parse-Application-Id: SxjfKcwYdNLljnzzqyaj8e8dkOXDPgeXujU9GqNw");
     client.println("X-Parse-REST-API-Key: JYQahDTyvOhwdzc84t7iVu7W2hqsxA0I9WHbshVM");
