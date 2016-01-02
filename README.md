@@ -1,11 +1,11 @@
-#RoomControl
+#Wim
 
 #Author 
 * Jeff Zheng 
 * Aishwarya Parasuram
 
 #Purpose 
-RoomControl is an iOS utility application that helps the user control IoT devices within a room. 
+Wim is an iOS utility application that helps the user control IoT devices within a room. 
 
 #Features 
 
